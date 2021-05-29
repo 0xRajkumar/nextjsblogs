@@ -1,0 +1,27 @@
+.main_div{
+    /* margin: 20px auto ; */
+    width: 950px;
+    max-width: 90%;
+    margin: auto;
+    /* background-color: var(--shark); */
+    /* grid-gap: 10px; */
+    /* grid-gap: 2px; */
+    padding: 10px;
+   
+}
+.section{
+    background-color: var(--white);
+}
+
+
+.main_div_blogs{
+    display: grid;
+    justify-items: center;
+    /* align-items: center; */
+    grid-template-columns: repeat(auto-fit,minmax(310px , 1fr));
+}
+
+.main_div_blogs_pagination{
+    display: flex;
+    justify-content: space-between;
+}

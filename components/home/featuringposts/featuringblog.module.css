@@ -1,0 +1,145 @@
+.featuring_section {
+ 
+  display: flex;
+ 
+}
+.featuring_section section {
+ 
+ 
+  width: 100%;
+
+  background-color: var(--shark);
+
+}
+.featuring_section_posts {
+  padding: 15px;
+  display: grid;
+  grid-gap: 15px;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.featuring_section_text h1 {
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: var(--white);
+}
+
+
+
+
+
+.featuring_section aside {
+  width: 30%;
+  background-color: var(--shark);
+
+}
+.search_div {
+    margin: 10px;
+    box-shadow: 0 0 1.5rem var(--cyan);
+    border: 3px solid var(--white);
+    background-color: var(--white);
+    border-radius: 5px;
+ 
+}
+.search_div form {
+  color: var(--cyan);
+  width: 100%;
+  text-shadow: 1px 1px 3px var(--white);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.search_div input {
+  border-radius: 10px;
+  width: 100%;
+  
+  padding: 5px 2px;
+  border: 3px solid var(--white);
+}
+.search_div input:focus {
+  outline: none;
+}
+.search_post{
+
+    margin: 10px;
+  
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    grid-row-gap: 10px;
+    grid-template-rows: repeat(auto-fit , 1fr);
+}
+
+
+
+
+@media all and (max-width: 320px) {
+  .featuring_section {
+    display: flex;
+    flex-direction: column;
+  }
+  .featuring_section section {
+    width: 100%;
+  
+  }
+  .featuring_section aside{
+    width: 100%;
+  }
+  .featuring_section_text h1 {
+    font-size: 2rem;
+  
+  }
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+  .featuring_section {
+    display: flex;
+    flex-direction: column;
+  }
+  .featuring_section section {
+    width: 100%;
+  
+  }
+  .featuring_section aside{
+    width: 100%;
+  }
+  .featuring_section_text h1 {
+    font-size: 2rem;
+  
+  }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .featuring_section {
+    display: flex;
+    flex-direction: column;
+  }
+  .featuring_section section {
+    width: 100%;
+  
+  }
+  .featuring_section aside{
+    width: 100%;
+  }
+  .featuring_section_text h1 {
+    font-size: 2rem;
+  
+  }
+  .asidediv{
+    width: 70%;
+    margin: auto;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .featuring_section aside{
+    width: 50%;
+  }
+}
+@media all and (min-width: 1025px) and (max-width: 1200px) {
+  
+}
+@media all and (min-width: 1201px) {
+ 
+}
+

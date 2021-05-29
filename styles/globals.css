@@ -1,16 +1,117 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
 * {
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+/* 
+html,body{
+  width: 100%;
+position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+} */
+p {
+  line-height: 1.4;
+}
+:root {
+ 
+  
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: #00aeda;
+  --light-cyan:#73c5db;
+  --cyan: #007d9c;
+  --grayish-blue: hsl(233, 4%, 46%);
+  --dark-white:rgb(248, 248, 248);
+  --white: hsl(0, 0%, 100%);
+  
+ 
+  --shadow:rgb(17 17 17 / 70%);
+  --shadow-light:rgba(0,0,0,0.2);
+  
+  --shark: #282c34;;
+}
+
+.basic_4 {
+  background: linear-gradient(currentColor 0 0) var(--p, 0) 100% / var(--d, 0)
+    2px no-repeat;
+  transition: 0.3s, background-position 0s 0.3s;
+}
+.basic_4:hover {
+  --d: 100%;
+  --p: 100%;
+}
+.btn{
+  padding: 7px 25px;
+  border: 2px solid var(--white);
+  color: var(--white);
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.btn:hover{
+  border: 2px solid transparent;
+  color:var(--shark);
+  background-color: var(--white);
+}
+::selection{
+  background-color:var(--cyan);
+
+  color: var(--white);
+}
+
+.link{
+  background-color: var(--light-cyan);
+  text-decoration: underline var(--cyan) ;
+  /* color: var(--white); */
+}
+.link:hover{
+  cursor:pointer;
+  background-color: var(--bright-cyan);
+}
+
+.btn_pagination{
+  padding: 7px 25px;
+  border: 2px solid var(--shark);
+
+  /* color: var(--white); */
+  background-color: transparent;
+  border-radius: 2.5px;
+  cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.btn_pagination:hover{
+  border: 2px solid transparent;
+  color:var(--white);
+  background-color: var(--shark);
+}
+.link20{
+  text-decoration: none;
+  color: var(--shark);
+}
+
+
+@media all and (max-width: 320px) {
+ 
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  
+}
+@media all and (min-width: 1025px) and (max-width: 1200px) {
+  
+}
+@media all and (min-width: 1201px) {
+ 
 }

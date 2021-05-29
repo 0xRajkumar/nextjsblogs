@@ -1,0 +1,102 @@
+.section{
+    /* padding: 30px 0px; */
+    background-color: var(--bright-cyan);
+}
+
+.file_div label{
+    padding: 10px 15px;
+    /* margin: 10px; */
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: var(--shark);
+    border: 2px solid var(--shark);
+    border-radius: 0.3rem;
+    /* cursor: pointer; */
+}
+.file_div{
+    display: flex;
+    /* padding: 10px; */
+    /* align-items: center; */
+}
+.file_div span{
+    padding: 10px 15px;
+    /* color: var(--white); */
+    text-decoration: solid var(--shark) underline 4px;
+}
+.section{
+   height: auto;
+    width: 100%;
+}
+.main_div{
+    margin: auto;
+    /* margin: 50px; */
+    padding: 20px;
+    max-width: 90%;
+    width: 1000px;
+    border-radius: 5px;
+    display: flex;
+    /* text-align: center; */
+    flex-direction: column;
+    /* background-color: var(--cyan); */
+}
+.text_div{
+    display: flex;
+    flex-direction: column;
+   
+}
+.text_div input{
+    padding: 6px 10px ;
+    border-radius: 6px;
+    margin: 10px 0px;
+    border: 1px solid var(--shark);
+}
+.text_div input:focus{
+   outline: none;
+   border: 2px solid var(--cyan);
+}
+.text_div textarea{
+    border-radius: 6px;
+    margin: 10px 0px;
+    padding: 6px 10px ;
+}
+.text_div textarea:focus{
+    outline: none;
+    border: 2px solid var(--cyan);
+}
+.btndiv{
+    margin: 10px 0px;
+}
+.section h1{
+    color: var(--white);
+    font-size:3rem ;
+    text-align:center ;
+    font-weight:lighter;
+}
+
+
+
+
+@media all and (max-width: 320px) {
+    .section h1{
+        font-size:1.8rem ; 
+    }
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+    .section h1{
+        font-size:2.4rem ; 
+    }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  
+}
+@media all and (min-width: 1025px) and (max-width: 1200px) {
+  
+}
+@media all and (min-width: 1201px) {
+ 
+}
+

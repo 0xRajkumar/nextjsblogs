@@ -1,0 +1,29 @@
+
+
+export const latestpostdata = [
+    { id:1,
+        photo:"/image1.jpg",
+        heading :"This is My heading",
+        para : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed sapiente officia optio aliquam rerum molestiae? Saepe qui soluta ab ex."
+    },
+    { id:2,
+        photo:"/image1.jpg",
+        heading :"This is My heading",
+        para : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed sapiente officia optio aliquam rerum molestiae? Saepe qui soluta ab ex."
+    },
+    { id:3,
+        photo:"/image1.jpg",
+        heading :"This is My heading",
+        para : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed sapiente officia optio aliquam rerum molestiae? Saepe qui soluta ab ex."
+    },
+    { id:4,
+        photo:"/image1.jpg",
+        heading :"This is My heading",
+        para : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed sapiente officia optio aliquam rerum molestiae? Saepe qui soluta ab ex."
+    },
+    { id:5,
+        photo:"/image1.jpg",
+        heading :"This is My heading",
+        para : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed sapiente officia optio aliquam rerum molestiae? Saepe qui soluta ab ex."
+    }
+]

@@ -1,0 +1,46 @@
+.login_section {
+  height: 80vh;
+  display: flex;
+  /* background-color: var(--grayish-blue); */
+  align-content: center;
+}
+.main_div {
+  border-radius: 4px;
+  padding: 30px 10px;
+  /* height: 350; */
+  width: 380px;
+  background-color: var(--shark);
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.main_div h1 {
+  color: var(--white);
+}
+.inputs_div {
+  margin: 30px 0px;
+}
+
+
+.input {
+  border-radius: 5px;
+  border: solid 2px white;
+  width: 80%;
+  margin: auto;
+  padding: 5px 2px;
+}
+.input:focus {
+  outline: none;
+}
+.btndiv {
+  margin: 30px 0px;
+}
+.link {
+
+  margin: 30px 0px;
+}
+.link a {
+  color: var(--white);
+  /* text-decoration: none; */
+  margin: 10px 0px;
+}

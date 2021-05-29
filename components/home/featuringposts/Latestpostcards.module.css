@@ -1,0 +1,36 @@
+.latestpostcard_div{
+    /* border: 2px  solid red; */
+    width: 250px;
+    height: auto;
+    padding: 6px;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+.latestpostcard_text_div p{
+    font-size: .75rem;
+    /* color: var(--grayish-blue); */
+
+}
+.latestpostcard_text_div h1{
+    /* font-weight: lighter; */
+    font-size: .85rem;
+    /* color: var(--grayish-blue); */
+
+}
+.latestpostcard_image_div{
+    margin-bottom: 10px;
+    box-shadow: 0 0 1.5rem var(--shadow);
+    transition: 0.00009s ease-in-out;
+
+}
+.latestpostcard_image_div a{
+    display: flex;
+
+}
+.latestpostcard_image_div:hover{
+    /* margin-bottom: 10px; */
+    /* box-shadow: 0 0 1.5rem var(--shadow); */
+    /* transition: 0.5s ease-in-out; */
+    transform: rotate(-2.8deg);
+
+}

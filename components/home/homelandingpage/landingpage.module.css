@@ -1,0 +1,206 @@
+.landingpage_wrap {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-direction: row;
+}
+.landingpage_text {
+  overflow-wrap: break-word;
+  width: 40%;
+  /* min-width: 280px; */
+  margin-top: 110px;
+}
+.landingpage_text h1 {
+  font-size: 3.5rem;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 30px;
+  color: var(--Black-Russian);
+  font-weight: 600;
+}
+.landingpage_text p {
+  margin-bottom: 30px;
+  color: var(--white);
+}
+.landingpage_image {
+  margin-top: 115px;
+  width: 60%;
+  /* min-width: 280px; */
+
+  display: flex;
+  justify-content: center;
+}
+.landing {
+  position: relative;
+  background-color: var(--bright-cyan);
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.bulb {
+  position: absolute;
+  z-index: 3;
+  top: -100px;
+  left: -200px;
+  pointer-events: none;
+
+  animation-name: rotateBulb;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.bulb1 {
+  position: absolute;
+  z-index: 3;
+  right: 80px;
+  top: -100px;
+  pointer-events: none;
+  animation-name: rotateBulb1;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation: one 25s linear infinite;
+}
+@keyframes rotateBulb {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateBulb1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes one {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: 80px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .landingpage_wrap {
+    /* display: flex; */
+    width: 96%;
+    /* justify-content: center; */
+    flex-direction: column;
+  }
+  .landingpage_text h1 {
+    font-size: 2rem;
+    /* word-wrap: normal; */
+    margin-bottom: 15px;
+  }
+  .landingpage_text p {
+    margin-bottom: 15px;
+    /* color: var(--white); */
+  }
+  .landingpage_text {
+    padding: 0px 10px;
+    overflow-wrap: break-word;
+    /* overflow-wrap:break-word; */
+    width: 100%;
+    /* min-width: 280px; */
+    margin-top: 30px;
+  }
+  .landingpage_image {
+    margin-top: 25px;
+    width: 100%;
+  }
+  .bulb {
+    top: 50px;
+  }
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+  .landingpage_wrap {
+    /* display: flex; */
+    width: 96%;
+    /* justify-content: center; */
+    flex-direction: column;
+  }
+  .landingpage_text h1 {
+    font-size: 2rem;
+    /* word-wrap: normal; */
+    margin-bottom: 15px;
+  }
+  .landingpage_text p {
+    margin-bottom: 15px;
+    /* color: var(--white); */
+  }
+  .landingpage_text {
+    padding: 0px 10px;
+    overflow-wrap: break-word;
+    /* overflow-wrap:break-word; */
+    width: 100%;
+    /* min-width: 280px; */
+    margin-top: 30px;
+  }
+  .landingpage_image {
+    margin-top: 35px;
+
+    width: 100%;
+  }
+  .bulb {
+    top: 50px;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+ 
+  .landingpage_text h1 {
+    font-size: 2rem;
+  
+  }
+  
+  .landingpage_text {
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    overflow-wrap: break-word;
+
+    width: 60%;
+
+    margin-top: 60px;
+  }
+  .landingpage_image {
+    margin-top: 35px;
+
+    width: 40%;
+  }
+  
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  
+  .landingpage_text h1 {
+    font-size: 2.44rem;
+  }
+  
+  .landingpage_text {
+    margin-bottom: 40px;
+    padding: 0px 10px;
+    overflow-wrap: break-word;
+
+    width: 60%;
+
+    margin-top: 60px;
+  }
+  .landingpage_image {
+    margin-top: 35px;
+
+    width: 40%;
+  }
+}
+@media all and (min-width: 1025px) and (max-width: 1200px) {
+  .landingpage_text h1 {
+    font-size: 3rem;
+  }
+}
+@media all and (min-width: 1201px) {
+}
