@@ -2,8 +2,8 @@ import Image from 'next/image'
 import blogcss from './blog.module.css'
 import { useState } from 'react'
 import { db } from '../../firebase'
-import 'react-toastify/dist/ReactToastify.css';
 
+import { ToastContainer, toast } from 'react-toastify';
 function Blog(props) {
     const allComments = props.allComments;
     console.log(props.allComments)
