@@ -2,10 +2,11 @@ import { useState } from "react"
 import Link from "next/link"
 import { auth } from "../../firebase"
 import logincss from "./signup.module.css";
-import {useRouter} from 'next/router'
+import { useRouter } from 'next/router'
+import { ToastContainer, toast } from 'react-toastify';
 
 function Signup() {
-const router = useRouter()
+    const router = useRouter()
     const [email, setemail] = useState("")
     const [password, setpassword] = useState("")
     const [name, setname] = useState("")
@@ -17,7 +18,16 @@ const router = useRouter()
                 displayName: name
             })
 
-            alert(`${res.user.displayName} Signup successfully`)
+
+            toast.success(`${res.user.displayName} Signup successfully`, {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
             router.push("/login")
             setemail("")
             setpassword("")
@@ -25,10 +35,19 @@ const router = useRouter()
 
         } catch (error) {
             var errorCode = error.code;
-            alert(errorCode)
+
             var errorMessage = error.message;
-            alert(errorMessage)
-            
+
+            toast.error(errorMessage, {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+
         }
 
     }
@@ -38,6 +57,8 @@ const router = useRouter()
 
                 <div className={logincss.main_div}>
                     <h1>Signup now</h1>
+                    <p>Dont't miss your next opportunity.Signin to stay updates on your professional world  </p>
+                    <hr />
                     <form onSubmit={handleSubmit} className={logincss.form} >
                         <div className={logincss.inputs_div}>
                             <input className={logincss.input} type="name" placeholder="Type name" value={name} onChange={(e) => { setname(e.target.value) }} />
@@ -59,7 +80,17 @@ const router = useRouter()
                     </form>
                 </div>
             </section>
-
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </>
     )
 }

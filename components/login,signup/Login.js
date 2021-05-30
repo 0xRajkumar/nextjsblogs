@@ -3,6 +3,7 @@ import Link from "next/link"
 import { auth } from '../../firebase'
 import logincss from "./login.module.css";
 import { useRouter } from 'next/router'
+import { ToastContainer, toast } from 'react-toastify';
 
 function Login() {
     const router = useRouter()
@@ -13,17 +14,31 @@ function Login() {
         try {
             const res = await auth.signInWithEmailAndPassword(email, password)
             console.log(`${res.user.displayName}`)
-            alert(`${res.user.displayName} Login successfully`)
 
+            toast.success(`${res.user.displayName} Login successfully`, {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
             setemail("")
             setpassword("")
             router.push("/")
         } catch (error) {
             var errorCode = error.code;
             var errorMessage = error.message;
-            // alert(errorMessage)
-            console.log(errorMessage)
-            // alert("Login failed Please chech detail carefully")
+            toast.error(errorMessage, {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
 
         }
 
@@ -35,6 +50,8 @@ function Login() {
 
                 <div className={logincss.main_div}>
                     <h1>Login</h1>
+                    <p>Dont't miss your next opportunity.Signin to stay updates on your professional world  </p>
+                    <hr />
                     <form onSubmit={handleSubmit} className={logincss.form} >
                         <div className={logincss.inputs_div}>
 
@@ -53,7 +70,19 @@ function Login() {
                         </div>
                     </form>
                 </div>
+
             </section>
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
 
         </>
     )

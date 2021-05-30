@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+
 * {
   padding: 0px;
   margin: 0px;
@@ -91,6 +92,7 @@ p {
   background-color: var(--shark);
 }
 .link20{
+  font-weight: lighter;
   text-decoration: none;
   color: var(--shark);
 }

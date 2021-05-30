@@ -1,14 +1,10 @@
 .card_div{
     text-align: center;
-    /* width: 270px; */
-    /* margin: 40px; */
     padding: 30px;
     background-color: var(--dark-white);
-    /* box-shadow: 0px 3px 15px rgba(0,0,0,0.2); */
 }
 .card_div:hover{
-    /* width: 270px; */
-    /* margin: 40px; */
+
     padding: 30px;
     background-color: var(--dark-white);
     box-shadow: 0px 3px 15px var(--shadow-light);
@@ -18,9 +14,7 @@
     color: var(--Black-Russian);
 }
 .card_div_text p{
-    color: var(--grayish-blue);
-    /* margin-bottom: 20px; */
-    
+    color: var(--grayish-blue);    
 }
 .card_div_icon span {
     

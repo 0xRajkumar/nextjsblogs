@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react'
 import { testimonialdata } from './testimonialdata'
 import Testimonial from './Testimonial'

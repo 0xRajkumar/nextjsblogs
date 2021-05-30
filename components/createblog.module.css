@@ -1,27 +1,21 @@
 .section{
-    /* padding: 30px 0px; */
     background-color: var(--bright-cyan);
 }
 
 .file_div label{
     padding: 10px 15px;
-    /* margin: 10px; */
     border-radius: 3px;
     color: rgb(255, 255, 255);
     background-color: var(--shark);
     border: 2px solid var(--shark);
     border-radius: 0.3rem;
-    /* cursor: pointer; */
 }
 .file_div{
     display: flex;
-    /* padding: 10px; */
-    /* align-items: center; */
 }
 .file_div span{
     padding: 10px 15px;
-    /* color: var(--white); */
-    text-decoration: solid var(--shark) underline 4px;
+    text-decoration: solid var(--shark) underline 2px;
 }
 .section{
    height: auto;
@@ -29,15 +23,12 @@
 }
 .main_div{
     margin: auto;
-    /* margin: 50px; */
     padding: 20px;
     max-width: 90%;
     width: 1000px;
     border-radius: 5px;
     display: flex;
-    /* text-align: center; */
     flex-direction: column;
-    /* background-color: var(--cyan); */
 }
 .text_div{
     display: flex;

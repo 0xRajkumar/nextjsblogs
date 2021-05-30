@@ -9,7 +9,7 @@ function Latestpostcards(props) {
                 <div className={latestpostcardcss.latestpostcard_image_div}>
                     <Link  href={"/blogs/" + link}>
                         <a >
-                            <img src={props.imageUrl} width="240" height="300" />
+                            <Image src={props.imageUrl} width="240" height="300" />
                         </a>
                     </Link>
                 </div>

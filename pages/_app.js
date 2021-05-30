@@ -3,7 +3,7 @@ import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/footer/Footer'
 import { auth } from '../firebase'
 import { useState, useEffect } from "react"
-
+import 'react-toastify/dist/ReactToastify.css';
 function MyApp({ Component, pageProps }) {
   const [user, setuser] = useState(null)
   useEffect(() => {

@@ -28,6 +28,7 @@ function Navbar({ user }) {
     }
   }
   useEffect(() => {
+    
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   })
@@ -91,7 +92,7 @@ function Navbar({ user }) {
 
 
               return (
-                <li key={index} className={navbarcss.navtext}>
+                <li onClick={showSidebar}  key={index} className={navbarcss.navtext}>
                   <Link href={item.path}><a className="basic_4">
                     {item.icon}
                     <span className={navbarcss.navslidebartitle}>{item.title}</span></a>
@@ -100,10 +101,10 @@ function Navbar({ user }) {
               );
             }
           })}
-            <li  className={navbarcss.navtext}>
+            <li onClick={showSidebar}   className={navbarcss.navtext}>
                   <Link href={user ? "/" : "/login"}><a className="basic_4">
-                  <IoMdHelpCircle />
-                    <span onClick={() => { auth.signOut() }} className={navbarcss.navslidebartitle}>{user ? "Logout" : "Login"}</span></a>
+                  <IoMdHelpCircle onClick={showSidebar} />
+                    <span onClick={() => { auth.signOut()  }} className={navbarcss.navslidebartitle}>{user ? "Logout" : "Login"}</span></a>
                   </Link>
                 </li>
         </ul>

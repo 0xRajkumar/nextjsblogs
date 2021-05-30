@@ -4,9 +4,38 @@ import { blogscarddata } from './blogscarddata'
 import blogspagecss from './blogspage.module.css'
 import LandingPage from '../home/homelandingpage/LandingPage'
 import Wave from '../Wave'
+
+import { BsSearch } from "react-icons/bs";
 export default function BlogsPage(props) {
-    const Allblogs = props.Allblogs;
-    console.log(Allblogs.length)
+
+    // Search
+    const blogs = props.Allblogs
+    const [Allblogs, setAllblogs] = useState(blogs)
+    const [search, setsearch] = useState("")
+    function searchFunc(e) {
+
+        setsearch(e.target.value)
+       
+    }
+    useEffect(() => {
+        if (search === "") {
+            setAllblogs(blogs)
+        }
+        else {
+            var result = Allblogs.filter((obj) => {
+                return obj.title.split(" ").join("").toLocaleUpperCase().includes(search.split(" ").join("").toLocaleUpperCase())
+            })
+            setAllblogs(result)
+        }
+
+
+    }, [search])
+
+
+
+    // Pagination
+
+
     const [counter, setcounter] = useState(1)
     const [pagination, setpagination] = useState({
         start: 0, end: 4
@@ -18,7 +47,7 @@ export default function BlogsPage(props) {
         setpagination({ start, end })
 
     }, [counter])
-    // console.log(props)
+
 
     return (
         <>
@@ -29,13 +58,19 @@ export default function BlogsPage(props) {
                 <div className={blogspagecss.main_div}>
                     <div style={{ textAlign: 'center' }}>
                         <h1 style={{ fontSize: "3rem", fontWeight: 'lighter' }}>All Blogs</h1>
+                        <div className={blogspagecss.search_div}>
+                            <form >
+                                <input type="text" placeholder="Search Posts" value={search} onChange={searchFunc} />
+                                <BsSearch />
+                            </form>
+                        </div>
                     </div>
 
                     <div className={blogspagecss.main_div_blogs}>
                         {
                             Allblogs.slice(pagination.start, pagination.end).map((data, i) => {
                                 return <BlogsCard key={i + 1} {...data} />
-                                
+
                             })
                         }
                     </div>

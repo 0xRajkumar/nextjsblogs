@@ -39,7 +39,6 @@
 @media all and (min-width: 481px) and (max-width: 768px) {
   .div_text {
     width: 135%;
-    /* padding: 3px; */
   }
 }
 @media all and (min-width: 769px) and (max-width: 1024px) {

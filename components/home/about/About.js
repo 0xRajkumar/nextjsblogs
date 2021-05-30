@@ -16,7 +16,7 @@ function About() {
                     {
                         aboutdata.map((data) => {
                             const { key, icon, heading, para } = data
-// console.log(id)
+
                             return <AboutCard key={key} icon={icon} heading={heading} para={para} />
 
                         })

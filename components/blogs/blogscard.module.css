@@ -1,13 +1,13 @@
 .div{
     background-color: var(--white);
-    /* padding: 15px; */
+   
     width:300px;
     box-shadow: 0px 3px 15px var(--shadow-light);
     margin: 10px;
     border-radius: 5px;
 }
 .text_div{
-  /* margin: 10px 0px;   */
+ 
   padding: 15px 10px;
 }
 .text_div h1{
@@ -19,12 +19,10 @@ font-size: 0.85rem;
 
 
 .image_div{
-  /* width: 400px; */
+
   overflow: hidden;
 }
-/* .image_div_hover{
-  transform: 0.4ms;
-} */
+
 .image_div_hover{
   transition: all 250ms ease-in-out;
 }

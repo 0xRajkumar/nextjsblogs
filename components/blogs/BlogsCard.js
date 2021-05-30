@@ -3,7 +3,7 @@ import Image from 'next/image'
 import blogscardcss from './blogscard.module.css'
 export default function BlogsCard(props) {
     let link = props.title.split(" ").join("_")
-    console.log(props.body)
+    // console.log(props.body)
     return (
         <>
             <div className={blogscardcss.div} >
@@ -11,7 +11,7 @@ export default function BlogsCard(props) {
                     <div className={blogscardcss.image_div_hover}>
                         <Link href={"/blogs/" + link}>
                             <a>
-                                <img src={props.imageUrl} height="240" width="400" className={blogscardcss.grayscale} />
+                                <Image src={props.imageUrl} height="240" width="400" className={blogscardcss.grayscale} />
                             </a>
                         </Link>
                     </div>

@@ -1,13 +1,12 @@
 .login_section {
   height: 80vh;
+  margin: 40px;
   display: flex;
-  /* background-color: var(--grayish-blue); */
   align-content: center;
 }
 .main_div {
   border-radius: 4px;
   padding: 30px 10px;
-  /* height: 350; */
   width: 380px;
   background-color: var(--shark);
   max-width: 80%;
@@ -16,6 +15,12 @@
 }
 .main_div h1 {
   color: var(--white);
+}
+.main_div p {
+  color: var(--white);
+  font-size: 0.8rem;
+  margin: 20px;
+  font-weight: lighter;
 }
 .inputs_div {
   margin: 30px 0px;
@@ -41,6 +46,5 @@
 }
 .link a {
   color: var(--white);
-  /* text-decoration: none; */
   margin: 10px 0px;
 }
