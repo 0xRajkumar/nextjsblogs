@@ -54,7 +54,7 @@ function Navbar({ user }) {
         <h1 className={navbarcss.mylogo} >BloggersWay.</h1>
         <ul className={navbarcss.navbar_ul}>
           <li><Link href="/" ><a className="basic_4">Home</a></Link></li>
-          <li><Link href="#about" ><a className="basic_4">About</a></Link></li>
+          <li><Link href="/#about" ><a className="basic_4">About</a></Link></li>
           {/* <li><Link href="/" ><a className="basic_4">Features</a></Link></li> */}
           <li><Link href="/#features" ><a className="basic_4">Features</a></Link></li>
           <li><Link href="/createblog" ><a className="basic_4">Create Blogs</a></Link></li>

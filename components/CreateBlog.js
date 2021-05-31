@@ -123,7 +123,7 @@ function CreateBlog({ user }) {
                 <div className={createblogcss.main_div}>
                     <div className={createblogcss.text_div}>
                         <input type="text" value={title} onChange={(e) => { settitle(e.target.value) }} placeholder="Type title" />
-                        <textarea cols='30' rows='18' type="text" value={body} onChange={(e) => { setbody(e.target.value) }} placeholder="type content" />
+                        <textarea cols='30' rows='18' type="text" value={body} onChange={(e) => { setbody(e.target.value) }} placeholder="Type content" />
                     </div>
                     <div className={createblogcss.file_div}>
                         <input id="file" type="file" onChange={(e) => { setfilename(e.target.files[0].name); setimage(e.target.files[0]) }} hidden />

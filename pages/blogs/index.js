@@ -1,7 +1,7 @@
 import {db} from '../../firebase'
 import BlogsPage from "../../components/blogs/BlogsPage"
 export default function BlogsC({Allblogs , user}) {
-  console.log(user)
+  // console.log(user)
     return (
         <>
             <BlogsPage Allblogs={Allblogs} />

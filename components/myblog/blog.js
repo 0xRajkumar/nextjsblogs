@@ -6,7 +6,7 @@ import { db } from '../../firebase'
 import { ToastContainer, toast } from 'react-toastify';
 function Blog(props) {
     const allComments = props.allComments;
-    console.log(props.allComments)
+    // console.log(props.allComments)
     const [comment, setcomment] = useState("")
     const [onthespotcomment, setonthespotcomment] = useState([])
     function makeComment() {
@@ -23,7 +23,7 @@ function Blog(props) {
                 });
             }
             else {
-                console.log(props)
+                // console.log(props)
                 db.collection('blogs').doc(props.id).collection("comments").add({
                     text: comment,
                     name: props.user.displayName
@@ -76,7 +76,7 @@ function Blog(props) {
                         {
                             allComments.map((data, index) => {
                                 return <div className={blogcss.comment_div} key={index}>
-                                    <h4 > <span className={blogcss.name}>{data.name}</span> : <span className={blogcss.text}>{data.text} </span> </h4>
+                                    <h4 > <span className={blogcss.name}>{data.name +":" }</span><span className={blogcss.text}> {data.text} </span> </h4>
 
                                 </div>
 
@@ -85,7 +85,7 @@ function Blog(props) {
                         {
                             onthespotcomment.map((data, index) => {
                                 return <div className={blogcss.comment_div} key={index}>
-                                    <h4 > <span className={blogcss.name}>{props.user.displayName}</span> : <span className={blogcss.text}>{data} </span> </h4>
+                                    <h4 > <span className={blogcss.name}>{props.user.displayName}</span> <span className={blogcss.text}>{data} </span> </h4>
 
                                 </div>
 

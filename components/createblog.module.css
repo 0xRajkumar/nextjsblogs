@@ -1,5 +1,6 @@
 .section{
     background-color: var(--bright-cyan);
+   
 }
 
 .file_div label{
@@ -58,6 +59,8 @@
     margin: 10px 0px;
 }
 .section h1{
+    text-decoration: underline solid 2px var(--white);
+    font-family: 'Ubuntu', sans-serif;
     color: var(--white);
     font-size:3rem ;
     text-align:center ;
